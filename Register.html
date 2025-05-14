@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, ainitial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Log In Page</title>
+  
+  <style>
+      *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: Times New Roman;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+  body{
+    
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+    .prnt{
+      display: flex;
+      border-radius: 15px;
+      box-shadow: 5px 5px 20px black;
+      justify-content: center;
+      align-items: center;
+      width:80vw;
+      height: 60vh;
+      background-color:skyblue;
+      
+    }
+    
+    #gap{
+      margin: 10px 0px;
+    }
+    
+    input{
+      width: 60vw;
+      height:5vh;
+      border-radius:10px;
+      outline-color: blue;
+    }
+    
+    button{
+      width: 60vw;
+      height:5vh;
+      border-radius:10px;
+      border: none;
+      transition: 0.5s ease;
+    }
+    button:hover{
+      
+    }
+    
+    h1{
+      font-size:15px;
+      text-align: center;
+      color: #fff;
+      
+    }
+    a{
+      padding: 0px 2px;
+    }
+  </style>
+  
+</head>
+<body>
+  <section class="prnt">
+      <div class="log">
+            <div class="inpt-dv">
+              <input type="email" id="gap">
+              <br>
+              <input type="password" id="gap">
+            </div>
+      <div class="btn-dv">
+             <button id="gap">Log In</button>
+       </div>
+      <h1 id="gap">Already have an account,<a href="LogIn.html">Log In</a>
+      </h1>
+      </div>
+  </section>
+</body>
+</html>

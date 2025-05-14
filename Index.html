@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hompage</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: Times New Roman;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.cover{
+  width: 100%;
+  height: 9rem;
+  
+}
+
+.img{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-image:url('ttt.jpg');
+  background-size: cover;
+}
+
+.nav{
+  width:95%;
+  height:5vh;
+  padding: 5px 10px;
+  backdrop-filter: blur(25px);
+  border-radius: 8px;
+  position:fixed;
+  margin: 5px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.nav .ul{
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  color: #fff;
+  
+}
+
+.nav .ul2{
+  width:8rem;
+  justify-content: space-between;
+  display: flex;
+}
+#lg{
+  padding:2px 7px;
+  border-radius: 4px;
+  border: none;
+  font-weight: bold;
+  background-color:skyblue;
+  color:#000;
+  transition: 0.5s ease;
+}
+
+#lg:hover{
+  background-color:#fff;
+}
+
+.nav .ul li a{
+  color: black;}
+  
+  .sldr{
+    padding: 5px 5px;
+    width:99%;
+   
+    overflow-x: scroll;
+    scrollbar-width:none;
+    cursor: grab;
+  }
+  
+  .sldr::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .sldr-dv{
+    width: max-content;
+    height: inherit;
+    display: flex;
+    gap: 0.25rem;
+  }
+  
+  .sldr-img{
+    width:90vw;
+    object-fit: cover;
+  }
+
+  .detail-img{
+    float: left;
+    width:30vw;
+    height:30vw;
+  }
+  
+  .detail-p{
+    padding: 5px;
+    width:;
+    height: 30vw;
+    
+  }
+  
+  .detail-tx{
+    text-shadow: 2px 2px 3px black;
+    color: red;
+    font-size: 25px;
+    padding: 5px 0px 20px 0px;
+    text-align: center;
+  }
+  
+  .que{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+  }
+  
+  #inpt{
+    margin: 10px 0px;
+  }
+  
+  .que-h1{
+    font-size: 35px;
+    color: red;
+    text-shadow: 2px 2px 2px black;
+  }
+  
+  .inpt1{
+    outline: none;
+    text-align: center;
+    font-size: 15px;
+    width:90vw;
+    height:15vh;
+    border: 2px solid black;
+    border-radius: 15px;
+  }
+  
+  .file{
+    background-color:;
+  }
+  
+  .upload{
+    width:90vw;
+    height: 5vh;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border-radius: 8px;
+    background-color: #00F76E;
+    border: none;
+    transition: 0.7s ease;
+    
+  }
+  
+  .upload:hover{
+    width:70vw;
+    background-color:#00B450;
+  }
+  
+  .ftr{
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+  }
+  
+  .ftr-h1{
+    padding: 5px;
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .ftr-div{
+    
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .ftr-div li{
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 20px 0px;
+  }
+  
+  .ftr-div li:hover{
+    color: white;
+  }
+  
+  
+  .post{
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+  }
+  
+  .profile{
+    display: flex;
+    padding: 15px 15px;
+    align-content: center;
+    gap: 10px;
+  }
+  .profile span{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+    overflow: hidden;
+    
+  }
+  
+  .prfl-img{
+    
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    }
+    .prfl-a{
+      font-size: 20px;
+      font-weight: bold;
+      color:black;
+    }
+  .pst-tme{
+    font-size: 10px;
+    color: grey;
+  }
+  
+  .pic{
+    width: 90%;
+    padding:0px 15px ;
+    
+  }
+  
+  .pst-pic{
+    width: 100%;
+  }
+  
+  .pst-discrb{
+    padding: 10px;
+  }
+  </style>
+  
+</head>
+<body>
+<section class="cover">
+  <div class="img">
+    <div class="nav">
+      <ul class="ul">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Learn</a></li>
+        <li><a href="#">Contact</a></li>
+        </ul>
+      
+      <div class="btn">
+      <ul class="ul2">
+        <li><a href="LogIn.html" id=""><button id="lg">Log In</button></a></li>
+        <li><a href="Register.html" id=""><button id="lg">Register</button></a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="prnt">
+  <section class="sldr">
+  <div class="sldr-dv">
+    <img src="sldr1.jpg" alt="" class="sldr-img">
+    <img src="sldr2.jpg" alt="" class="sldr-img">
+    <img src="sldr3.jpg" alt="" class="sldr-img">
+    <img src="sldr4.jpg" alt="" class="sldr-img">
+  </div>
+</section>
+
+<section class="detail">
+  <h1 class="detail-tx">
+    important's Of English
+  </h1>
+  
+    <img src="hemal.png" alt="" class="detail-img">
+  
+  <p class="detail-p">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum nesciunt quibusdam, quam fuga iusto at illum tempora dolor quod culpa neque ratione laudantium, ipsa beatae, dicta veniam voluptatum dolorem officiis!
+  </p>
+</section>
+
+
+
+<sectiion class="post">
+  <div class="profile">
+    <span><img src="hemal.png" class="prfl-img"></span>
+    
+    <div class="prfl-nam">
+      <a href="#" class="prfl-a">Niloy Ahmed Hemal</a><br>
+    <p class="pst-tme">1 min ago</p>
+    </div>
+  </div>
+  <p class="pst-discrb">I ______ Fish<br> <br>
+  1.Play<br>
+  2.Sing<br>
+  3.Drink<br>
+  4.Like<br>
+  </p>
+  
+  <div class="pic">
+    <img src="cover.jpg" alt="" class="pst-pic">
+  </div>
+</sectiion>
+
+
+
+
+
+
+
+
+
+
+<sectiion class="post">
+  <div class="profile">
+    <span><img src="prfl.jpg" class="prfl-img"></span>
+    
+    <div class="prfl-nam">
+      <a href="#" class="prfl-a">Tufael Islam Tupu</a><br>
+    <p class="pst-tme">2 min ago</p>
+    </div>
+  </div>
+  <p class="pst-discrb">I ______ a Fish<br> <br>
+  1.Catch<br>
+  2.Could <br>
+  3.Would <br>
+  4.Should<br>
+  </p>
+  
+  <div class="pic">
+    <img src="about.jpg" alt="" class="pst-pic">
+  </div>
+</sectiion>
+
+
+
+
+<sectiion class="que">
+  <div class="que-div">
+      <h1 class="que-h1">
+     Upload Your Quizze
+    </h1>
+  
+    <input type="text" id="inpt" placeholder="Describe Your Quizze" class="inpt1"><br>
+    
+    <input type="file" id="inpt" class="file"><br>
+    <button class="upload" id="inpt">Upload</button>
+  </div>
+</sectiion>
+
+<section class="ftr">
+
+  <h1 class="ftr-h1">
+    Tofael Islam Tupu
+  </h1>
+  
+<div class="ftr-div">
+  <a href="#"><li>Help</li></a>
+  <a href="#"><li>Learn Grammar</li></a>
+  <a href="#"><li>short curts tricks for speaking</li></a>
+  <a href="#"><li>Contact Us</li></a>
+</div>
+</section>
+
+</section>
+
+</body>
+</html>
